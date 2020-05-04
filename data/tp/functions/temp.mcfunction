@@ -1,3 +1,8 @@
+# Switch dimension
+execute as @s[tag=tempset,scores={TempDim=-1}] in the_nether run tp 0 0 0
+execute as @s[tag=tempset,scores={TempDim=0}] in overworld run tp 0 0 0
+execute as @s[tag=tempset,scores={TempDim=1}] in the_end run tp 0 0 0
+
 # Set current pos
 execute store result score @s CurrentX run data get entity @s Pos[0]
 execute store result score @s CurrentY run data get entity @s Pos[1]
