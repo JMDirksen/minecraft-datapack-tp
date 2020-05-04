@@ -3,18 +3,10 @@ execute as @s[tag=tempset,scores={TempDim=-1}] in the_nether run tp 0 0 0
 execute as @s[tag=tempset,scores={TempDim=0}] in overworld run tp 0 0 0
 execute as @s[tag=tempset,scores={TempDim=1}] in the_end run tp 0 0 0
 
-# Set current pos
-execute store result score @s CurrentX run data get entity @s Pos[0]
-execute store result score @s CurrentY run data get entity @s Pos[1]
-execute store result score @s CurrentZ run data get entity @s Pos[2]
-
-# Set diff = Temp pos - Current pos
+# Set diff = Temp pos
 scoreboard players operation @s DiffX = @s TempX
-scoreboard players operation @s DiffX -= @s CurrentX
 scoreboard players operation @s DiffY = @s TempY
-scoreboard players operation @s DiffY -= @s CurrentY
 scoreboard players operation @s DiffZ = @s TempZ
-scoreboard players operation @s DiffZ -= @s CurrentZ
 
 # TP X
 execute as @s[tag=tempset,scores={DiffX=1..}] run function tp:x
