@@ -1,5 +1,3 @@
-gamerule sendCommandFeedback false
-
 scoreboard objectives add HomeX dummy
 scoreboard objectives add HomeY dummy
 scoreboard objectives add HomeZ dummy

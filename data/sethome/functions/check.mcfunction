@@ -25,7 +25,7 @@ execute as @a[scores={settemp=1..}] run tellraw @s ["",{"text":"Your temp has be
 execute as @a[scores={settemp=1..}] run scoreboard players reset @s settemp
 
 # Temp trigger
-scoreboard players enable @a temp
+scoreboard players enable @a[tag=Admin] temp
 execute as @a[scores={temp=1..},tag=tempset] run function sethome:temp
 execute as @a[scores={temp=1..},tag=tempset] run tellraw @s ["",{"text":"Teleported","color":"green"}]
 execute as @a[scores={temp=1..},tag=!tempset] run tellraw @s ["",{"text":"No temp set","color":"red"}]
