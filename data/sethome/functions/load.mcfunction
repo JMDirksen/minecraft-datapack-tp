@@ -1,3 +1,5 @@
+gamerule sendCommandFeedback false
+
 scoreboard objectives add HomeX dummy
 scoreboard objectives add HomeY dummy
 scoreboard objectives add HomeZ dummy
@@ -9,3 +11,9 @@ scoreboard objectives add TempDim dummy
 scoreboard objectives add DiffX dummy
 scoreboard objectives add DiffY dummy
 scoreboard objectives add DiffZ dummy
+
+scoreboard objectives add sethome trigger
+scoreboard objectives add home trigger
+scoreboard objectives add help-sethome trigger
+
+function sethome:check
