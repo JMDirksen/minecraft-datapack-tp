@@ -16,4 +16,7 @@ scoreboard objectives add sethome trigger
 scoreboard objectives add home trigger
 scoreboard objectives add help-sethome trigger
 
+scoreboard objectives add settemp trigger
+scoreboard objectives add temp trigger
+
 function sethome:check
