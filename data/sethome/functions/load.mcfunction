@@ -13,6 +13,7 @@ scoreboard objectives add DiffZ dummy
 scoreboard objectives add sethome trigger
 scoreboard objectives add home trigger
 scoreboard objectives add spawn trigger
+scoreboard objectives add random trigger
 scoreboard objectives add help-sethome trigger
 
 scoreboard objectives add settemp trigger

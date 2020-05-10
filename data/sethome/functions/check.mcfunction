@@ -19,6 +19,12 @@ execute as @a[scores={spawn=1..}] run function sethome:spawn
 execute as @a[scores={spawn=1..}] run tellraw @s ["",{"text":"Teleported","color":"green"}]
 execute as @a[scores={spawn=1..}] run scoreboard players reset @s spawn
 
+# Random trigger
+scoreboard players enable @a random
+execute as @a[scores={random=1..}] run function sethome:random
+execute as @a[scores={random=1..}] run tellraw @s ["",{"text":"Teleported","color":"green"}]
+execute as @a[scores={random=1..}] run scoreboard players reset @s random
+
 # Help-sethome trigger
 scoreboard players enable @a help-sethome
 execute as @a[scores={help-sethome=1..}] run function sethome:help
