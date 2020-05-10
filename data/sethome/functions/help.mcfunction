@@ -1,3 +1,5 @@
-tellraw @s ["",{"text":"/trigger help-sethome","color":"yellow"},{"text":" Show this help","color":"green"}]
-tellraw @s ["",{"text":"/trigger sethome","color":"yellow"},{"text":" Set home position here","color":"green"}]
-tellraw @s ["",{"text":"/trigger home","color":"yellow"},{"text":" Teleport to home position","color":"green"}]
+tellraw @s ["",{"text":"/trigger tp-help","color":"yellow"},{"text":" Show this help","color":"green"}]
+tellraw @s ["",{"text":"/trigger tp-sethome","color":"yellow"},{"text":" Set home here","color":"green"}]
+tellraw @s ["",{"text":"/trigger tp-home","color":"yellow"},{"text":" Teleport to home","color":"green"}]
+tellraw @s ["",{"text":"/trigger tp-spawn","color":"yellow"},{"text":" Teleport to spawn","color":"green"}]
+tellraw @s ["",{"text":"/trigger tp-random","color":"yellow"},{"text":" Teleport to random location far away","color":"green"}]

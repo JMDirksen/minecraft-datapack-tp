@@ -1,4 +1,4 @@
 schedule function sethome:cooldown 1s
 
-scoreboard players add @a cooldown 0
-scoreboard players remove @a[scores={cooldown=1..}] cooldown 1
+scoreboard players add @a tp-cooldown 0
+scoreboard players remove @a[scores={tp-cooldown=1..}] tp-cooldown 1

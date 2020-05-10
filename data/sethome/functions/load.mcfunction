@@ -1,17 +1,17 @@
-scoreboard objectives add HomeX dummy
-scoreboard objectives add HomeY dummy
-scoreboard objectives add HomeZ dummy
-scoreboard objectives add HomeDim dummy
-scoreboard objectives add DiffX dummy
-scoreboard objectives add DiffY dummy
-scoreboard objectives add DiffZ dummy
-scoreboard objectives add cooldown dummy
+scoreboard objectives add tp-home-x dummy
+scoreboard objectives add tp-home-y dummy
+scoreboard objectives add tp-home-z dummy
+scoreboard objectives add tp-home-d dummy
+scoreboard objectives add tp-diff-x dummy
+scoreboard objectives add tp-diff-y dummy
+scoreboard objectives add tp-diff-z dummy
+scoreboard objectives add tp-cooldown dummy
 
-scoreboard objectives add sethome trigger
-scoreboard objectives add home trigger
-scoreboard objectives add spawn trigger
-scoreboard objectives add random trigger
-scoreboard objectives add help-sethome trigger
+scoreboard objectives add tp-sethome trigger
+scoreboard objectives add tp-home trigger
+scoreboard objectives add tp-spawn trigger
+scoreboard objectives add tp-random trigger
+scoreboard objectives add tp-help trigger
 
 function sethome:triggers
 function sethome:cooldown
