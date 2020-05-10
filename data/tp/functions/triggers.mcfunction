@@ -19,6 +19,18 @@ execute as @a[scores={tp-home=1..,tp-home-y=1..,tp-tokens=1..,tp-cooldown=0}] ru
 execute as @a[scores={tp-home=1..,tp-home-y=1..,tp-tokens=1..,tp-cooldown=60}] run scoreboard players remove @s tp-tokens 1
 execute as @a[scores={tp-home=1..}] run scoreboard players reset @s tp-home
 
+# Back trigger
+scoreboard players enable @a tp-back
+scoreboard players add @a[scores={tp-back=1..}] tp-back-y 0
+execute as @a[scores={tp-back=1..,tp-back-y=0}] run tellraw @s ["",{"text":"Nowhere to go back to","color":"red"}]
+execute as @a[scores={tp-back=1..,tp-back-y=1..,tp-tokens=0}] run tellraw @s ["",{"text":"No teleport tokens left","color":"red"}]
+execute as @a[scores={tp-back=1..,tp-back-y=1..,tp-tokens=1..,tp-cooldown=1..}] run tellraw @s ["",{"text":"Can't do that just yet, wait ","color":"red"},{"score":{"name":"@s","objective":"tp-cooldown"},"color":"red"},{"text":" sec.","color":"red"}]
+execute as @a[scores={tp-back=1..,tp-back-y=1..,tp-tokens=1..,tp-cooldown=0}] run function tp:back
+execute as @a[scores={tp-back=1..,tp-back-y=1..,tp-tokens=1..,tp-cooldown=0}] run tellraw @s ["",{"text":"Teleported back","color":"green"}]
+execute as @a[scores={tp-back=1..,tp-back-y=1..,tp-tokens=1..,tp-cooldown=0}] run scoreboard players set @s tp-cooldown 60
+execute as @a[scores={tp-back=1..,tp-back-y=1..,tp-tokens=1..,tp-cooldown=60}] run scoreboard players remove @s tp-tokens 1
+execute as @a[scores={tp-back=1..}] run scoreboard players reset @s tp-back
+
 # Spawn trigger
 scoreboard players enable @a tp-spawn
 execute as @a[scores={tp-spawn=1..,tp-tokens=0}] run tellraw @s ["",{"text":"No teleport tokens left","color":"red"}]
