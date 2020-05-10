@@ -1,4 +1,4 @@
-tellraw @s ["",{"text":"Teleports cost 1 token, you get 1 token per 5 min., teleporting has a 1 min. cooldown","color":"green"}]
+tellraw @s ["",{"text":"Teleports cost 1 token, you get 1 token per 5 min. 3 tokens max., teleporting has a 1 min. cooldown","color":"green"}]
 tellraw @s ["",{"text":"/trigger tp-help","color":"yellow"},{"text":" Show this help","color":"green"}]
 tellraw @s ["",{"text":"/trigger tp-sethome","color":"yellow"},{"text":" Set home here","color":"green"}]
 tellraw @s ["",{"text":"/trigger tp-home","color":"yellow"},{"text":" Teleport to home","color":"green"}]
