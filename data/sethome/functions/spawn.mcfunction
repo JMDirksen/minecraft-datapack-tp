@@ -1,2 +1,1 @@
-effect give @s slow_falling 15
-tp @s 0 100 0
+spreadplayers 0 0 0 10 false @s
