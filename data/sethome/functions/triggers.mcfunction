@@ -1,4 +1,4 @@
-schedule function sethome:check 5
+schedule function sethome:triggers 5
 
 # Sethome trigger
 scoreboard players enable @a sethome

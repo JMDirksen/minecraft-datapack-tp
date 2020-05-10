@@ -19,4 +19,4 @@ scoreboard objectives add help-sethome trigger
 scoreboard objectives add settemp trigger
 scoreboard objectives add temp trigger
 
-function sethome:check
+function sethome:triggers
