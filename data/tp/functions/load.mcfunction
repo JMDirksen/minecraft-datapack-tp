@@ -6,6 +6,7 @@ scoreboard objectives add tp-diff-x dummy
 scoreboard objectives add tp-diff-y dummy
 scoreboard objectives add tp-diff-z dummy
 scoreboard objectives add tp-cooldown dummy
+scoreboard objectives add tp-tokens dummy
 
 scoreboard objectives add tp-sethome trigger
 scoreboard objectives add tp-home trigger
@@ -15,3 +16,4 @@ scoreboard objectives add tp-help trigger
 
 function tp:triggers
 function tp:cooldown
+function tp:tokens
