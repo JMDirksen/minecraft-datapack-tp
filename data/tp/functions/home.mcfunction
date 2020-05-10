@@ -9,16 +9,16 @@ scoreboard players operation @s tp-diff-y = @s tp-home-y
 scoreboard players operation @s tp-diff-z = @s tp-home-z
 
 # TP X
-execute as @s[tag=homeset,scores={tp-diff-x=1..}] run function sethome:x
-execute as @s[tag=homeset,scores={tp-diff-x=..-1}] run function sethome:-x
+execute as @s[tag=homeset,scores={tp-diff-x=1..}] run function tp:x
+execute as @s[tag=homeset,scores={tp-diff-x=..-1}] run function tp:-x
 
 # TP Y
-execute as @s[tag=homeset,scores={tp-diff-y=1..}] run function sethome:y
-execute as @s[tag=homeset,scores={tp-diff-y=..-1}] run function sethome:-y
+execute as @s[tag=homeset,scores={tp-diff-y=1..}] run function tp:y
+execute as @s[tag=homeset,scores={tp-diff-y=..-1}] run function tp:-y
 
 # TP Z
-execute as @s[tag=homeset,scores={tp-diff-z=1..}] run function sethome:z
-execute as @s[tag=homeset,scores={tp-diff-z=..-1}] run function sethome:-z
+execute as @s[tag=homeset,scores={tp-diff-z=1..}] run function tp:z
+execute as @s[tag=homeset,scores={tp-diff-z=..-1}] run function tp:-z
 
 # Center on block
 execute at @s align xyz run tp @s ~.5 ~ ~.5

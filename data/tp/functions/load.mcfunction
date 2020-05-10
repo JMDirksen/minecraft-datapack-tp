@@ -13,5 +13,5 @@ scoreboard objectives add tp-spawn trigger
 scoreboard objectives add tp-random trigger
 scoreboard objectives add tp-help trigger
 
-function sethome:triggers
-function sethome:cooldown
+function tp:triggers
+function tp:cooldown
