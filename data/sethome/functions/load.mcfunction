@@ -9,6 +9,7 @@ scoreboard objectives add TempDim dummy
 scoreboard objectives add DiffX dummy
 scoreboard objectives add DiffY dummy
 scoreboard objectives add DiffZ dummy
+scoreboard objectives add cooldown dummy
 
 scoreboard objectives add sethome trigger
 scoreboard objectives add home trigger
@@ -20,3 +21,4 @@ scoreboard objectives add settemp trigger
 scoreboard objectives add temp trigger
 
 function sethome:triggers
+function sethome:cooldown
