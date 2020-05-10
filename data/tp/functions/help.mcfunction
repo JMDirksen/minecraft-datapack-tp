@@ -5,4 +5,4 @@ tellraw @s ["",{"text":"/trigger tp-home","color":"yellow"},{"text":" Teleport t
 tellraw @s ["",{"text":"/trigger tp-spawn","color":"yellow"},{"text":" Teleport to spawn","color":"green"}]
 tellraw @s ["",{"text":"/trigger tp-random","color":"yellow"},{"text":" Teleport to random location far away","color":"green"}]
 tellraw @s ["",{"text":"/trigger tp-back","color":"yellow"},{"text":" Teleport back to where you came from","color":"green"}]
-tellraw @s ["",{"text":"You have: ","color":"green"},{"score":{"name":"@s","objective":"tp-tokens"},"color":"aqua"},{"text":" tokens and ","color":"green"},{"score":{"name":"@s","objective":"tp-cooldown"},"color":"aqua"},{"text":" seconds cooldown","color":"green"}]
+tellraw @s ["",{"text":"You have ","color":"green"},{"score":{"name":"@s","objective":"tp-tokens"},"color":"aqua"},{"text":" tokens and ","color":"green"},{"score":{"name":"@s","objective":"tp-cooldown"},"color":"aqua"},{"text":" seconds cooldown","color":"green"}]
