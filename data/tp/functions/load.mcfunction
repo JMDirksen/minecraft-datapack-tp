@@ -9,6 +9,7 @@ scoreboard objectives add tp-back-d dummy
 scoreboard objectives add tp-diff-x dummy
 scoreboard objectives add tp-diff-y dummy
 scoreboard objectives add tp-diff-z dummy
+scoreboard objectives add tp-diff-d dummy
 scoreboard objectives add tp-cooldown dummy
 scoreboard objectives add tp-tokens dummy
 scoreboard objectives add tp-token-timer dummy
