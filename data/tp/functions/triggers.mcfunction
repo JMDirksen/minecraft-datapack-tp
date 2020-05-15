@@ -19,6 +19,24 @@ execute as @a[scores={tp-home=1..,tp-home-y=1..,tp-tokens=1..,tp-cooldown=60}] r
 execute as @a[scores={tp-home=1..,tp-home-y=1..,tp-tokens=1..,tp-cooldown=60}] run tellraw @s ["",{"text":"Teleported home (","color":"green"},{"score":{"name":"@s","objective":"tp-tokens"},"color":"aqua"},{"text":" tokens left)","color":"green"}]
 execute as @a[scores={tp-home=1..}] run scoreboard players reset @s tp-home
 
+# Sethome2 trigger
+scoreboard players enable @a[tag=Admin] tp-sethome2
+execute as @a[scores={tp-sethome2=1..}] run function tp:sethome2
+execute as @a[scores={tp-sethome2=1..}] run tellraw @s ["",{"text":"Your home2 has been set","color":"green"}]
+execute as @a[scores={tp-sethome2=1..}] run scoreboard players reset @s tp-sethome2
+
+# Home2 trigger
+scoreboard players enable @a[tag=Admin] tp-home2
+scoreboard players add @a[scores={tp-home2=1..}] tp-home2-y 0
+execute as @a[scores={tp-home2=1..,tp-home2-y=0}] run tellraw @s ["",{"text":"No home2 set","color":"red"}]
+execute as @a[scores={tp-home2=1..,tp-home2-y=1..,tp-tokens=0}] run tellraw @s ["",{"text":"No teleport tokens left","color":"red"}]
+execute as @a[scores={tp-home2=1..,tp-home2-y=1..,tp-tokens=1..,tp-cooldown=1..}] run tellraw @s ["",{"text":"Can't do that just yet, wait ","color":"red"},{"score":{"name":"@s","objective":"tp-cooldown"},"color":"red"},{"text":" sec.","color":"red"}]
+execute as @a[scores={tp-home2=1..,tp-home2-y=1..,tp-tokens=1..,tp-cooldown=0}] run function tp:home2
+execute as @a[scores={tp-home2=1..,tp-home2-y=1..,tp-tokens=1..,tp-cooldown=0}] run scoreboard players set @s tp-cooldown 60
+execute as @a[scores={tp-home2=1..,tp-home2-y=1..,tp-tokens=1..,tp-cooldown=60}] run scoreboard players remove @s tp-tokens 1
+execute as @a[scores={tp-home2=1..,tp-home2-y=1..,tp-tokens=1..,tp-cooldown=60}] run tellraw @s ["",{"text":"Teleported home2 (","color":"green"},{"score":{"name":"@s","objective":"tp-tokens"},"color":"aqua"},{"text":" tokens left)","color":"green"}]
+execute as @a[scores={tp-home2=1..}] run scoreboard players reset @s tp-home2
+
 # Back trigger
 scoreboard players enable @a tp-back
 scoreboard players add @a[scores={tp-back=1..}] tp-back-y 0

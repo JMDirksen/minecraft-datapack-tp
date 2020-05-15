@@ -2,6 +2,10 @@ scoreboard objectives add tp-home-x dummy
 scoreboard objectives add tp-home-y dummy
 scoreboard objectives add tp-home-z dummy
 scoreboard objectives add tp-home-d dummy
+scoreboard objectives add tp-home2-x dummy
+scoreboard objectives add tp-home2-y dummy
+scoreboard objectives add tp-home2-z dummy
+scoreboard objectives add tp-home2-d dummy
 scoreboard objectives add tp-back-x dummy
 scoreboard objectives add tp-back-y dummy
 scoreboard objectives add tp-back-z dummy
@@ -16,6 +20,8 @@ scoreboard objectives add tp-token-timer dummy
 
 scoreboard objectives add tp-sethome trigger
 scoreboard objectives add tp-home trigger
+scoreboard objectives add tp-sethome2 trigger
+scoreboard objectives add tp-home2 trigger
 scoreboard objectives add tp-back trigger
 scoreboard objectives add tp-spawn trigger
 scoreboard objectives add tp-random trigger
