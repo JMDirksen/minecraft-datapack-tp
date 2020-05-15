@@ -24,4 +24,4 @@ execute as @s[scores={tp-diff-z=1..}] run function tp:z
 execute as @s[scores={tp-diff-z=..-1}] run function tp:-z
 
 # Center on block
-execute at @s align xyz run tp @s ~.5 ~ ~.5
+execute at @s align xyz run tp @s ~.5 ~.5 ~.5
