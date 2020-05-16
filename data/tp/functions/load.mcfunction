@@ -26,6 +26,7 @@ scoreboard objectives add tp-back trigger
 scoreboard objectives add tp-spawn trigger
 scoreboard objectives add tp-random trigger
 scoreboard objectives add tp-help trigger
+scoreboard objectives add tp-info trigger
 
 function tp:triggers
 function tp:cooldown

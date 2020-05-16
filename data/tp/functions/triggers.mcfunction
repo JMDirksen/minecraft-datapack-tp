@@ -73,3 +73,8 @@ execute as @a[scores={tp-random=1..}] run scoreboard players reset @s tp-random
 scoreboard players enable @a tp-help
 execute as @a[scores={tp-help=1..}] run function tp:help
 execute as @a[scores={tp-help=1..}] run scoreboard players reset @s tp-help
+
+# Info trigger
+scoreboard players enable @a tp-info
+execute as @a[scores={tp-info=1..}] run function tp:info
+execute as @a[scores={tp-info=1..}] run scoreboard players reset @s tp-info
