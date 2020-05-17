@@ -6,3 +6,4 @@ tellraw @s ["",{"text":"/trigger tp-home","color":"yellow"},{"text":" Teleport t
 tellraw @s ["",{"text":"/trigger tp-spawn","color":"yellow"},{"text":" Teleport to spawn","color":"green"}]
 tellraw @s ["",{"text":"/trigger tp-random","color":"yellow"},{"text":" Teleport to a random overworld location","color":"green"}]
 tellraw @s ["",{"text":"/trigger tp-back","color":"yellow"},{"text":" Teleport back to where you came from","color":"green"}]
+tellraw @s ["",{"text":"/trigger tpa","color":"yellow"},{"text":" Teleport to another player","color":"green"}]

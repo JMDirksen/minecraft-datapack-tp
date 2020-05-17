@@ -82,6 +82,7 @@ execute as @a[scores={tp-info=1..}] run scoreboard players reset @s tp-info
 # TPA trigger
 scoreboard players enable @a tpa
 scoreboard players add @a tpa 0
+execute as @a[scores={tpa=1}] run function tp:tpa-help
 execute as @a[scores={tpa=2..}] run function tp:tpa
 scoreboard players reset @a[scores={tpa=1..}] tpa
 
