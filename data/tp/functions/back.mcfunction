@@ -25,3 +25,7 @@ execute as @s[scores={tp-diff-z=..-1}] run function tp:-z
 
 # Center on block
 execute at @s align xyz run tp @s ~.5 ~.5 ~.5
+
+scoreboard players set @s tp-cooldown 60
+scoreboard players remove @s tp-tokens 1
+tellraw @s ["",{"text":"Teleported back (","color":"green"},{"score":{"name":"@s","objective":"tp-tokens"},"color":"aqua"},{"text":" tokens left)","color":"green"}]
