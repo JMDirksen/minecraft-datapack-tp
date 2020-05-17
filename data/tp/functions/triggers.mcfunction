@@ -66,7 +66,9 @@ scoreboard players reset @a[scores={tp-info=1..}] tp-info
 scoreboard players enable @a tpa
 scoreboard players add @a tpa 0
 execute as @a[scores={tpa=1}] run function tp:tpa-help
-execute as @a[scores={tpa=2..}] run function tp:tpa
+tellraw @a[scores={tpa=2..,tp-tokens=0}] ["",{"text":"No teleport tokens left","color":"red"}]
+tellraw @a[scores={tpa=2..,tp-tokens=1..,tp-cooldown=1..}] ["",{"text":"Can't do that just yet, wait ","color":"red"},{"score":{"name":"@s","objective":"tp-cooldown"},"color":"red"},{"text":" sec.","color":"red"}]
+execute as @a[scores={tpa=2..,tp-tokens=1..,tp-cooldown=0}] run function tp:tpa
 scoreboard players reset @a[scores={tpa=1..}] tpa
 
 # TPAccept trigger
