@@ -8,4 +8,5 @@ scoreboard players operation @a[scores={tp-id=0},limit=1] tp-id = #playerids tp-
 # Reset id offline players
 execute as @a run scoreboard players operation @s tp-id-temp = @s tp-id
 scoreboard players reset * tp-id
+scoreboard players set #playerids tp-id 1
 execute as @a run scoreboard players operation @s tp-id = @s tp-id-temp

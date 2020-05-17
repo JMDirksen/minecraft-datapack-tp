@@ -82,9 +82,8 @@ execute as @a[scores={tp-info=1..}] run scoreboard players reset @s tp-info
 # TPA trigger
 scoreboard players enable @a tpa
 scoreboard players add @a tpa 0
-execute as @a[scores={tpa=..0}] run scoreboard players set @s tpa -1000
-execute as @a[scores={tpa=1..}] run function tp:tpa
-execute as @a[scores={tpa=1..}] run scoreboard players set @s tpa -1000
+execute as @a[scores={tpa=2..}] run function tp:tpa
+scoreboard players reset @a[scores={tpa=1..}] tpa
 
 # TPAccept trigger
 execute as @a[scores={tpaccept=1..}] run function tp:tpaccept
