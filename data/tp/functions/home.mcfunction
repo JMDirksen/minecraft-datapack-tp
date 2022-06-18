@@ -1,9 +1,9 @@
 function tp:setback
 
 # Switch dimension
-execute as @s[scores={tp-home-d=-1}] in the_nether run tp 0 0 0
-execute as @s[scores={tp-home-d=0}] in overworld run tp 0 0 0
-execute as @s[scores={tp-home-d=1}] in the_end run tp 0 0 0
+execute as @s[scores={tp-home-d=20}] in the_nether run tp 0 0 0
+execute as @s[scores={tp-home-d=19}] in overworld run tp 0 0 0
+execute as @s[scores={tp-home-d=17}] in the_end run tp 0 0 0
 
 # Set diff = Home pos
 scoreboard players operation @s tp-diff-x = @s tp-home-x
