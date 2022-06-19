@@ -1,3 +1,3 @@
-tellraw @s ["",{"text":" Lookup the playerid in the player list","color":"green"}]
-tellraw @s ["",{"text":"/trigger tpa set <playerid>","color":"yellow"},{"text":" Request to teleport to player","color":"green"}]
-tellraw @s ["",{"text":"/trigger tpaccept","color":"yellow"},{"text":" Accept a teleport request from another player","color":"green"}]
+tellraw @s ["",{"text":" Vind het spelerid in de spelers lijst","color":"green"}]
+tellraw @s ["",{"text":"/trigger tpa set <spelerid>","color":"yellow"},{"text":" Verzoek om naar de speler te teleporteren","color":"green"}]
+tellraw @s ["",{"text":"/trigger tpaccept","color":"yellow"},{"text":" Accepteer het verzoek van de andere speler","color":"green"}]
