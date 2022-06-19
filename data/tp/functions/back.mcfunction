@@ -7,9 +7,9 @@ scoreboard players operation @s tp-diff-d = @s tp-back-d
 function tp:setback
 
 # Switch dimension
-execute as @s[scores={tp-diff-d=20}] in the_nether run tp 0 0 0
-execute as @s[scores={tp-diff-d=19}] in overworld run tp 0 0 0
-execute as @s[scores={tp-diff-d=17}] in the_end run tp 0 0 0
+execute as @s[scores={tp-diff-d=-1}] in the_nether run tp 0 0 0
+execute as @s[scores={tp-diff-d=0}] in overworld run tp 0 0 0
+execute as @s[scores={tp-diff-d=1}] in the_end run tp 0 0 0
 
 # TP X
 execute as @s[scores={tp-diff-x=1..}] run function tp:x
